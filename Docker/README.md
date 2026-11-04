@@ -3,7 +3,6 @@
 Containerizing of Go application with Muilt-stage build 
 
 
-
 **Docker File** 
 
 ```
@@ -47,5 +46,8 @@ EXPOSE 8080
 CMD ["./main"]
 
 ```
+**Explanation**
 
-Code exp -------------- 
+`gcr.io/distroless/base`? --> Use of distroless image
+
+`./static` --> why copy static files ? --> 
