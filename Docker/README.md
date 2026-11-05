@@ -48,6 +48,11 @@ CMD ["./main"]
 ```
 **Explanation**
 
-`gcr.io/distroless/base`? --> Use of distroless image
+`gcr.io/distroless/base`? --> It is a minimal Docker base image crea0ted by Google (GoogleContainerTools) that contains only our application's runtime dependencies, package managers, and debugging utilities.
+Eliminating unused binaries and package managers drastically reduces the number of Common Vulnerabilities and Exposures (CVEs) flagged by security scanners, and leaves attackers with nothing to use if they breach the container.
+It is significantly leaner than full Linux distribution images (like Ubuntu or Debian) or even Alpine Linux, leading to faster image pulls and deployments.
 
-`./static` --> why copy static files ? --> 
+`./static` --> why copy static files ? --> It is copying a folder containing static web assets that our application needs to serve to users.
+
+## HandsON
+<img width="932" height="617" alt="image" src="https://github.com/user-attachments/assets/fa653eff-75b3-4995-9169-4b89e2f8b9fc" />
