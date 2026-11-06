@@ -55,4 +55,13 @@ It is significantly leaner than full Linux distribution images (like Ubuntu or D
 `./static` --> why copy static files ? --> It is copying a folder containing static web assets that our application needs to serve to users.
 
 ## HandsON
+## Docker build 
 <img width="932" height="617" alt="image" src="https://github.com/user-attachments/assets/fa653eff-75b3-4995-9169-4b89e2f8b9fc" />
+
+## Docker run
+<img width="817" height="577" alt="Screenshot 2026-11-05 145458" src="https://github.com/user-attachments/assets/281ac761-9e4e-4c0d-8f44-bfc356b5890f" />
+<img width="1221" height="740" alt="Screenshot 2026-11-05 145435" src="https://github.com/user-attachments/assets/ac9081f4-1314-4de3-929b-88766fca285a" />
+
+## Docker push
+<img width="1225" height="701" alt="Screenshot 2026-11-05 150514" src="https://github.com/user-attachments/assets/46d31014-9483-4e33-bfe6-4ac1577bf7c3" />
+
