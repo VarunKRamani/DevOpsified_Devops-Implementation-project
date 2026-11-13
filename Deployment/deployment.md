@@ -25,4 +25,8 @@ _____
 - Now we need to expose it to the public, Run `kubectl get ing`, the Address is not available for this we need an **Ingress Controller**.
 - We are using **Nginx Ingress Controller**
 
+- Install Nginx 
+
+Understanding Nginx Ingress controller -- [ exp -----------------------]
+
 - -------------
