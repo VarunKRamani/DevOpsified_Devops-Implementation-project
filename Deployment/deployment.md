@@ -27,12 +27,10 @@ _____
 
 - Install Nginx from the official repo.
 
-**Understanding Nginx Ingress controller** 
-- It acts an critical bridge between external traffic and the Internal Service, running on the kubernetes cluster.
-- It acts as front door for Incoming traffic (HTTP/HTTPS) from outside the cluster.
-- It watches the Ingress resource configuration and automatically create Load Balancer to handle the incoming requests.
-- It can look at the URL path (like /shop or /menu) and route traffic to entirely different service.
+**Configuration Ingress Controller** 
 
+- exp1
+----------------------------
 
 
  
