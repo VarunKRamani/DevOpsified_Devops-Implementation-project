@@ -15,3 +15,25 @@
 - **Lightweight:**  ------------
 - **built to be a Traffic cop:**---------------
 - **Handles thousands of connections at once:**---------------------
+
+_____
+
+**The Complete Traffic Journey. Once everything is applied, when a request hits your cluster:**
+
+- Traffic arrives from outside the cluster at your Load Balancer (managed by the Ingress controller).
+- It flows directly into the NGINX Ingress Controller pods.
+- NGINX matches the domain/path using your Ingress rules (go-web-app.local).
+- NGINX forwards the request to your internal Service (ClusterIP on port 80).
+- The Service balances and routes the traffic straight to your application Pod on port 8080
+
+<img width="1376" height="768" alt="Traffic flow" src="https://github.com/user-attachments/assets/1d36e723-102c-46a1-abfa-fadae009a262" />
+
+
+
+_____
+
+## Helm 
+
+What is it ?
+Why is it used ? ----- EXP
+
