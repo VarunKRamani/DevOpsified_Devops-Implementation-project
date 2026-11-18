@@ -7,7 +7,7 @@
 - **Path-Based Routing** : It can look at the URL path (like /shop or /menu) and route traffic to entirely different service.
 - **Host-Based Routing**: It can look at the domain name (like app.example.com vs. admin.example.com) and send traffic to the appropriate backend.
 
-<img width="1408" height="768" alt="Gemini_Generated_Image_mz14symz14symz14" src="https://github.com/user-attachments/assets/88cc3e4d-da65-4fa0-8a2c-c869dd0e9f5b" />
+<img width="700" height="450" alt="Gemini_Generated_Image_mz14symz14symz14" src="https://github.com/user-attachments/assets/88cc3e4d-da65-4fa0-8a2c-c869dd0e9f5b" />
 
 ## Nginx Ingress Controller 
 **Nginx IC**: widely used for it's lightweight, speed and ability to handle massive amount traffic without crashing or slowing down.
@@ -26,7 +26,7 @@ _____
 - NGINX forwards the request to your internal Service (ClusterIP on port 80).
 - The Service balances and routes the traffic straight to your application Pod on port 8080
 
-<img width="1376" height="768" alt="Traffic flow" src="https://github.com/user-attachments/assets/1d36e723-102c-46a1-abfa-fadae009a262" />
+<img width="700" height="450" alt="Traffic flow" src="https://github.com/user-attachments/assets/1d36e723-102c-46a1-abfa-fadae009a262" />
 
 
 
@@ -41,6 +41,9 @@ It packages all the kubernetes resources files (like deployment.yaml, service.ya
 It uses a values.yaml filr to inject dynamic configuration.
 
 Key Components: 
-- templates --> 
-- values.yaml -->
-- chart.yaml --> 
+- templates --> This folder contains our standard kubernetes manifests. Which uses special syntax to pull data from values.yaml file. 
+- values.yaml --> The file where we define out special configuration values for our current Environment.  
+- chart.yaml --> It Contains metadata of our application and chart version.
+
+ <img width="700" height="450" alt="heml_chart" src="https://github.com/user-attachments/assets/06660cc1-576a-407a-9318-d5137ca7f4a1" />
+
