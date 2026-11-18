@@ -34,6 +34,13 @@ _____
 
 ## Helm 
 
-What is it ?
-Why is it used ? ----- EXP
+Helm is a took that is used to **manage and deploy application on Kubernetes cluster**.
 
+It packages all the kubernetes resources files (like deployment.yaml, service.yaml and ingres .yaml) into a single logical unit called **chart**.
+
+It uses a values.yaml filr to inject dynamic configuration.
+
+Key Components: 
+- templates --> 
+- values.yaml -->
+- chart.yaml --> 
