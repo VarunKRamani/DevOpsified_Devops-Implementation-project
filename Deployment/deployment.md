@@ -29,12 +29,19 @@ _____
 
 **Configuration Ingress Controller** 
 
-- exp1
-----------------------------
-
 
  
 
+## Helm Process --
+**Deployment** 
+[note: make sure the previous deployment is deleted. Run `kubectl delete deploy go-web-app`, `kubectl delete svc go-web-app`, and `kubectl delete ing go-web-app`. To check run `kubectl get all`, except Kubernetes service there will be nothing left.]
 
+- Create a folder/dir `helm`, run `mkdir helm`.
+- `cd helm`
+- Run `helm create go-web-app-chart`, and `cd go-web-app-chart`
+- there will be `chart.yaml`, `charts`, `templates`, and `values.yaml`. Delete `charts`, run `rm -rf charts`.
+-  make sure only `deployment.yaml`, `service.yaml`, and `ingress.yaml` are present in templates folder/dir.
+-  Come to `/helm` dir and run `helm install go-web-app ./go-web-app-chart` to **Deploy the Application** and check by running `kubectl get all`.
+-  And to uninstall/delete the deployment, run `helm uninstall go-web-app`. It will remove deployment, service and ingress. to check run `kubectl get all`. 
 
 - -------------
