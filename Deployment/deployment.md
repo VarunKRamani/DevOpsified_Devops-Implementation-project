@@ -28,9 +28,12 @@ _____
 - Install Nginx from the official repo.
 
 **Configuration Ingress Controller** 
-
-
- 
+- Once the Nginx is installed, It will look into the Ingress resource and create a **Load balancer**.
+- Run `kubectl get ing`, the address i.e. FQDN (Fully qualified domain name) will be available. 
+- Set the DNS record on the local to access the project on the browser, **why?** -> The Ingress resource is set to accept the request only on host `go-web-app.local`.
+- get the Ip of the address by running `nslookup address` copy the IP and run `sudo vim /etc/hosts`, paste the ip and address (IP Address) and save it.
+- Now the project will be Accessible.
+# 😃🥳❗
 
 ## Helm Process --
 **Deployment** 
