@@ -47,4 +47,13 @@ _____
 -  Come to `/helm` dir and run `helm install go-web-app ./go-web-app-chart` to **Deploy the Application** and check by running `kubectl get all`.
 -  And to uninstall/delete the deployment, run `helm uninstall go-web-app`. It will remove deployment, service and ingress. to check run `kubectl get all`. 
 
-- -------------
+_____
+
+## **CI - Continues Integration (GitHub Actions)**
+
+- Set the directory .github/workflows/cicd.yaml
+- Under which all the jobs are described. Build, code-quality, push and  update-newtag-in-helm-chart.
+
+
+
+
