@@ -28,9 +28,12 @@ _____
 - Install Nginx from the official repo.
 
 **Configuration Ingress Controller** 
-
-
- 
+- Once the Nginx is installed, It will look into the Ingress resource and create a **Load balancer**.
+- Run `kubectl get ing`, the address i.e. FQDN (Fully qualified domain name) will be available. 
+- Set the DNS record on the local to access the project on the browser, **why?** -> The Ingress resource is set to accept the request only on host `go-web-app.local`.
+- get the Ip of the address by running `nslookup address` copy the IP and run `sudo vim /etc/hosts`, paste the ip and address (IP Address) and save it.
+- Now the project will be Accessible.
+# 😃🥳❗
 
 ## Helm Process --
 **Deployment** 
@@ -44,4 +47,13 @@ _____
 -  Come to `/helm` dir and run `helm install go-web-app ./go-web-app-chart` to **Deploy the Application** and check by running `kubectl get all`.
 -  And to uninstall/delete the deployment, run `helm uninstall go-web-app`. It will remove deployment, service and ingress. to check run `kubectl get all`. 
 
-- -------------
+_____
+
+## **CI - Continues Integration (GitHub Actions)**
+
+- Set the directory .github/workflows/cicd.yaml
+- Under which all the jobs are described. Build, code-quality, push and  update-newtag-in-helm-chart.
+
+
+
+
