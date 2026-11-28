@@ -55,5 +55,7 @@ _____
 - Under which all the jobs are described. Build, code-quality, push and  update-newtag-in-helm-chart.
 
 
+___________
+## CD - ArgoCD 
 
-
+Once the values.yaml is updated from CI, CD Picks up from there. with that updated values.yaml the deployment is done.
